@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NearHub - Chat Platforms </title>
+    <!-- tailwind css cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbit cdn link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body{
+         font-family: 'Manrope', sans-serif;
+      }
+    </style>
+</head>
+<body>
+    
+
+<button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+   <span class="sr-only">Open sidebar</span>
+   <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+   </svg>
+</button>
+
+<aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-80 2xl:w-96 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+   <div class="h-full px-3 py-4 overflow-y-auto bg-black">
+      <ul class="space-y-2 font-medium">
+         <li>
+            <div class="flex items-center justify-between p-2 text-gray-900 rounded-lg">
+                <div class="relative">              
+                    <img class="w-10 h-10" src="assets/images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" alt="">
+                    <span class="absolute bottom-0 right-0">  
+                        <span class="relative flex">
+                            <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>                    
+                        </span>
+                    </span>
+                </div>
+                <div class="ml-3 flex items-center">
+                    <span class="ml-2 cursor-pointer">
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 21L16.65 16.65" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                 
+                    </span>
+                    <span class="ml-2 cursor-pointer">
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12H22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>                        
+                    </span>
+                    <span class="ml-2 cursor-pointer">
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 2H3C2.73478 2 2.48043 2.10536 2.29289 2.29289C2.10536 2.48043 2 2.73478 2 3V21C2 21.2652 2.10536 21.5196 2.29289 21.7071C2.48043 21.8946 2.73478 22 3 22H21C21.2652 22 21.5196 21.8946 21.7071 21.7071C21.8946 21.5196 22 21.2652 22 21V3C22 2.73478 21.8946 2.48043 21.7071 2.29289C21.5196 2.10536 21.2652 2 21 2ZM8 20H4V4H8V20ZM20 20H10V13H20V20ZM20 11H10V4H20V11Z" fill="white"/>
+                     </svg>                                               
+                    </span>
+                    <span class="ml-2 cursor-pointer">
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.28994 14.29L5.99994 14.59V7C5.99994 6.73478 5.89458 6.48043 5.70705 6.29289C5.51951 6.10536 5.26516 6 4.99994 6C4.73472 6 4.48037 6.10536 4.29283 6.29289C4.1053 6.48043 3.99994 6.73478 3.99994 7V14.59L3.70994 14.29C3.52164 14.1017 3.26624 13.9959 2.99994 13.9959C2.73364 13.9959 2.47824 14.1017 2.28994 14.29C2.10164 14.4783 1.99585 14.7337 1.99585 15C1.99585 15.2663 2.10164 15.5217 2.28994 15.71L4.28994 17.71C4.38505 17.801 4.49719 17.8724 4.61994 17.92C4.73964 17.9729 4.86907 18.0002 4.99994 18.0002C5.13081 18.0002 5.26024 17.9729 5.37994 17.92C5.50269 17.8724 5.61484 17.801 5.70994 17.71L7.70994 15.71C7.80318 15.6168 7.87714 15.5061 7.9276 15.3842C7.97806 15.2624 8.00403 15.1319 8.00403 15C8.00403 14.8681 7.97806 14.7376 7.9276 14.6158C7.87714 14.4939 7.80318 14.3832 7.70994 14.29C7.6167 14.1968 7.50601 14.1228 7.38419 14.0723C7.26237 14.0219 7.1318 13.9959 6.99994 13.9959C6.86808 13.9959 6.73751 14.0219 6.61569 14.0723C6.49387 14.1228 6.38318 14.1968 6.28994 14.29ZM10.9999 8H20.9999C21.2652 8 21.5195 7.89464 21.707 7.70711C21.8946 7.51957 21.9999 7.26522 21.9999 7C21.9999 6.73478 21.8946 6.48043 21.707 6.29289C21.5195 6.10536 21.2652 6 20.9999 6H10.9999C10.7347 6 10.4804 6.10536 10.2928 6.29289C10.1053 6.48043 9.99994 6.73478 9.99994 7C9.99994 7.26522 10.1053 7.51957 10.2928 7.70711C10.4804 7.89464 10.7347 8 10.9999 8ZM20.9999 11H10.9999C10.7347 11 10.4804 11.1054 10.2928 11.2929C10.1053 11.4804 9.99994 11.7348 9.99994 12C9.99994 12.2652 10.1053 12.5196 10.2928 12.7071C10.4804 12.8946 10.7347 13 10.9999 13H20.9999C21.2652 13 21.5195 12.8946 21.707 12.7071C21.8946 12.5196 21.9999 12.2652 21.9999 12C21.9999 11.7348 21.8946 11.4804 21.707 11.2929C21.5195 11.1054 21.2652 11 20.9999 11ZM20.9999 16H10.9999C10.7347 16 10.4804 16.1054 10.2928 16.2929C10.1053 16.4804 9.99994 16.7348 9.99994 17C9.99994 17.2652 10.1053 17.5196 10.2928 17.7071C10.4804 17.8946 10.7347 18 10.9999 18H20.9999C21.2652 18 21.5195 17.8946 21.707 17.7071C21.8946 17.5196 21.9999 17.2652 21.9999 17C21.9999 16.7348 21.8946 16.4804 21.707 16.2929C21.5195 16.1054 21.2652 16 20.9999 16Z" fill="white"/>
+                     </svg>                                                                     
+                    </span>
+                    <span class="ml-2 cursor-pointer">
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H13C13.2652 13 13.5196 12.8946 13.7071 12.7071C13.8946 12.5196 14 12.2652 14 12C14 11.7348 13.8946 11.4804 13.7071 11.2929C13.5196 11.1054 13.2652 11 13 11ZM17 7H7C6.73478 7 6.48043 7.10536 6.29289 7.29289C6.10536 7.48043 6 7.73478 6 8C6 8.26522 6.10536 8.51957 6.29289 8.70711C6.48043 8.89464 6.73478 9 7 9H17C17.2652 9 17.5196 8.89464 17.7071 8.70711C17.8946 8.51957 18 8.26522 18 8C18 7.73478 17.8946 7.48043 17.7071 7.29289C17.5196 7.10536 17.2652 7 17 7ZM19 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V15C2 15.7956 2.31607 16.5587 2.87868 17.1213C3.44129 17.6839 4.20435 18 5 18H16.59L20.29 21.71C20.3834 21.8027 20.4943 21.876 20.6161 21.9258C20.7379 21.9755 20.8684 22.0008 21 22C21.1312 22.0034 21.2613 21.976 21.38 21.92C21.5626 21.845 21.7189 21.7176 21.8293 21.5539C21.9396 21.3901 21.999 21.1974 22 21V5C22 4.20435 21.6839 3.44129 21.1213 2.87868C20.5587 2.31607 19.7956 2 19 2ZM20 18.59L17.71 16.29C17.6166 16.1973 17.5057 16.124 17.3839 16.0742C17.2621 16.0245 17.1316 15.9992 17 16H5C4.73478 16 4.48043 15.8946 4.29289 15.7071C4.10536 15.5196 4 15.2652 4 15V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H19C19.2652 4 19.5196 4.10536 19.7071 4.29289C19.8946 4.48043 20 4.73478 20 5V18.59Z" fill="white"/>
+                        </svg>                                                                                                                     
+                    </span>
+                    <span class="ml-2 cursor-pointer">
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 7C12.3956 7 12.7822 6.8827 13.1111 6.66294C13.44 6.44318 13.6964 6.13082 13.8478 5.76537C13.9991 5.39992 14.0387 4.99778 13.9616 4.60982C13.8844 4.22186 13.6939 3.86549 13.4142 3.58579C13.1345 3.30608 12.7781 3.1156 12.3902 3.03843C12.0022 2.96126 11.6001 3.00087 11.2346 3.15224C10.8692 3.30362 10.5568 3.55996 10.3371 3.88886C10.1173 4.21776 10 4.60444 10 5C10 5.53043 10.2107 6.03914 10.5858 6.41421C10.9609 6.78929 11.4696 7 12 7ZM12 17C11.6044 17 11.2178 17.1173 10.8889 17.3371C10.56 17.5568 10.3036 17.8692 10.1522 18.2346C10.0009 18.6001 9.96126 19.0022 10.0384 19.3902C10.1156 19.7781 10.3061 20.1345 10.5858 20.4142C10.8655 20.6939 11.2219 20.8844 11.6098 20.9616C11.9978 21.0387 12.3999 20.9991 12.7654 20.8478C13.1308 20.6964 13.4432 20.44 13.6629 20.1111C13.8827 19.7822 14 19.3956 14 19C14 18.4696 13.7893 17.9609 13.4142 17.5858C13.0391 17.2107 12.5304 17 12 17ZM12 10C11.6044 10 11.2178 10.1173 10.8889 10.3371C10.56 10.5568 10.3036 10.8692 10.1522 11.2346C10.0009 11.6001 9.96126 12.0022 10.0384 12.3902C10.1156 12.7781 10.3061 13.1345 10.5858 13.4142C10.8655 13.6939 11.2219 13.8844 11.6098 13.9616C11.9978 14.0387 12.3999 13.9991 12.7654 13.8478C13.1308 13.6964 13.4432 13.44 13.6629 13.1111C13.8827 12.7822 14 12.3956 14 12C14 11.4696 13.7893 10.9609 13.4142 10.5858C13.0391 10.2107 12.5304 10 12 10Z" fill="white"/>
+                     </svg>                                                                                             
+                    </span>
+                </div>
+            </div>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg">
+               <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+               <span class="flex-1 ml-3 whitespace-nowrap text-[#5e79e7] hover:text-[#1fe6d9]">Kanban</span>
+               <span class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full">Pro</span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg">
+               <span class="w-9 h-9 px-3 py-[5px] flex justify-center items-center bg-blue-300 rounded-sm">D</span>
+               <span class="flex-1 ml-3 whitespace-nowrap">
+                  <span class="text-[#1fe6d9] hover:text-[#1fe6d9]"># Design </span>
+                  <p class="text-sm text-white">Matida: Guys, please let me know wh...</p>
+               </span>
+               <span class="flex flex-col items-start justify-center">
+                  <span class="text-white text-sm">12:39</span>
+                  <span class="inline-flex items-center justify-center w-2 h-2 p-2.5 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded">3</span>
+               </span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg">
+               <span class="w-9 h-9 px-3 py-[5px] flex justify-center items-center bg-gray-300 rounded-sm">D</span>
+               <span class="flex-1 ml-3 whitespace-nowrap">
+                  <span class="text-[#1fe6d9] hover:text-[#1fe6d9]"># Development </span>
+                  <p class="text-sm text-white">You: A Discount Toner Cartridge is B...</p>
+               </span>
+               <span class="flex flex-col items-end justify-start">
+                  <span class="text-white text-sm">Apr 19</span>
+                  <span class="inline-flex items-center justify-center w-2 h-2 p-2.5 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded">2</span>
+               </span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg">
+               <span class="w-9 h-9 px-3 py-[5px] flex justify-center items-center bg-green-300 rounded-sm">I</span>
+               <span class="flex-1 ml-3 whitespace-nowrap">
+                  <span class="text-[#5e79e7] hover:text-[#1fe6d9]"># Ideas </span>
+                  <p class="text-sm text-gray-400">Melissa: WordPress Version 6.2</p>
+               </span>
+               <span class="flex flex-col items-end justify-start">
+                  <span class="text-white text-sm">19:06</span>
+               </span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg">
+               <span class="w-9 h-9 px-3 py-[5px] flex justify-center items-center bg-red-300 rounded-sm">Q</span>
+               <span class="flex-1 ml-3 whitespace-nowrap">
+                  <span class="text-[#5e79e7] hover:text-[#1fe6d9] inline-flex items-center stroke-[#5e79e7] hover:stroke-[#1fe6d9]"># QA <svg width="16" height="16" class=" ml-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M19 11H5C3.89543 11 3 11.8954 3 13V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V13C21 11.8954 20.1046 11 19 11Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>
+                  </span>
+                  <p class="text-sm text-gray-400">You: A Discount Toner Cartridge is B...</p>
+               </span>
+               <span class="flex flex-col items-end justify-start">
+                  <span class="text-white text-sm">1w</span>
+               </span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg">
+               <span class="w-9 h-9 px-3 py-[5px] flex justify-center items-center bg-orange-300 rounded-sm">B</span>
+               <span class="flex-1 ml-3 whitespace-nowrap">
+                  <span class="text-[#5e79e7] hover:text-[#1fe6d9] inline-flex items-center stroke-[#5e79e7] hover:stroke-[#1fe6d9]"># Bureaucracy <svg width="16" height="16" class=" ml-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M19 11H5C3.89543 11 3 11.8954 3 13V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V13C21 11.8954 20.1046 11 19 11Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>
+                  </span>
+                  <p class="text-sm text-gray-400">Hattie: Dealing With Technical Suppo...</p>
+               </span>
+               <span class="flex flex-col items-end justify-start">
+                  <span class="text-white text-sm">1w</span>
+               </span>
+            </a>
+         </li>
+         
+      </ul>
+      <ul class="space-y-2 mt-4 font-medium">
+         <p class="text-white">People</p>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg">
+               <div class="relative">              
+                  <img class="w-9 h-9" src="assets/images/avater-2.jpg" alt="">
+                  <span class="absolute bottom-0 right-0">  
+                      <span class="relative flex">
+                          <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-green-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>                    
+                      </span>
+                  </span>
+              </div>
+               <span class="flex-1 ml-3 whitespace-nowrap">
+                  <span class="text-gray-300 inline-flex items-center stroke-[#5e79e7] hover:stroke-[#1fe6d9]"> louisa.fields</span>
+                  <p class="text-sm text-gray-400">Matida: Marie, please let me know w...</p>
+               </span>
+               <span class="flex flex-col items-end justify-start">
+                  <span class="text-white text-sm">2h</span>
+               </span>
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg">
+               <div class="relative">              
+                  <img class="w-9 h-9" src="assets/images/avater-1.jpg" alt="">
+                  <span class="absolute bottom-0 right-0">  
+                      <span class="relative flex">
+                          <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-green-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>                    
+                      </span>
+                  </span>
+              </div>
+               <span class="flex-1 ml-3 whitespace-nowrap">
+                  <span class="text-gray-300 inline-flex items-center stroke-[#5e79e7] hover:stroke-[#1fe6d9]"> don.carison</span>
+                  <p class="text-sm text-gray-400">Hattie: Dealing With Technical Support</p>
+               </span>
+               <span class="flex flex-col items-end justify-start">
+                  <span class="text-white text-sm">12.39</span>
+                  <span class="inline-flex items-center justify-center w-2 h-2 p-2.5 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded">1</span>
+               </span>
+            </a>
+         </li>
+      </ul>
+   </div>
+</aside>
+
+<div class="p-4 sm:ml-80 2xl:ml-96">
+   <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
+      <div class="grid grid-cols-3 gap-4 mb-4">
+         <div class="flex items-center justify-center h-24 rounded bg-gray-50">
+            <p class="text-2xl text-gray-400">+</p>
+         </div>
+         <div class="flex items-center justify-center h-24 rounded bg-gray-50">
+            <p class="text-2xl text-gray-400">+</p>
+         </div>
+         <div class="flex items-center justify-center h-24 rounded bg-gray-50">
+            <p class="text-2xl text-gray-400">+</p>
+         </div>
+      </div>
+      <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50">
+         <p class="text-2xl text-gray-400">+</p>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+         <div class="flex items-center justify-center rounded bg-gray-50 h-28">
+            <p class="text-2xl text-gray-400">+</p>
+         </div>
+         <div class="flex items-center justify-center rounded bg-gray-50 h-28">
+            <p class="text-2xl text-gray-400">+</p>
+         </div>
+         <div class="flex items-center justify-center rounded bg-gray-50 h-28">
+            <p class="text-2xl text-gray-400">+</p>
+         </div>
+         <div class="flex items-center justify-center rounded bg-gray-50 h-28">
+            <p class="text-2xl text-gray-400">+</p>
+         </div>
+      </div>
+      <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50">
+         <p class="text-2xl text-gray-400">+</p>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+         <div class="flex items-center justify-center rounded bg-gray-50 h-28">
+            <p class="text-2xl text-gray-400">+</p>
+         </div>
+         <div class="flex items-center justify-center rounded bg-gray-50 h-28">
+            <p class="text-2xl text-gray-400">+</p>
+         </div>
+         <div class="flex items-center justify-center rounded bg-gray-50 h-28">
+            <p class="text-2xl text-gray-400">+</p>
+         </div>
+         <div class="flex items-center justify-center rounded bg-gray-50 h-28">
+            <p class="text-2xl text-gray-400">+</p>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+    <!-- Flowbit cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+</html>
